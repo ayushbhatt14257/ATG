@@ -1,0 +1,1157 @@
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@600;700;900&display=swap');
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        
+        body {
+            font-family: "IBM Plex Sans", sans-serif;
+            margin: 0%;
+            padding: 0%;
+        }
+        
+        .navBar {
+            max-width: 90%;
+            margin: auto;
+        }
+        
+        .navBarContainer {
+            display: flex;
+            background-color: #FFFFFF;
+            height: 72px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .navLogo img {
+            width: 162.58px;
+        }
+        
+        .navSearch {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            width: 360px;
+            background-color: #F2F2F2;
+            height: 42px;
+            grid-area: 2rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        
+        .navSearch i {
+            color: #5C5C5C;
+        }
+        
+        .navSearch input {
+            width: 324px;
+            background-color: #F2F2F2;
+            border: none;
+            margin-left: 1rem;
+            font-size: 14px;
+            font-weight: 500;
+            font-family: "IBM Plex Sans", sans-serif;
+            color: #5C5C5C;
+        }
+        
+        .navCreateAccount {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .navCreateAccount p {
+            color: #2E2E2E;
+            margin-bottom: 0%;
+            font-family: "IBM Plex Sans", sans-serif;
+        }
+        
+        .navCreateAccount p span {
+            color: #2F6CE5;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        
+        .navBarContainerMobile {
+            display: none;
+        }
+        /* ============== MEDIA QUERIES (MEDIUM) ============ */
+        
+        @media screen and (max-width: 851px) {
+            .navBarContainer {
+                display: none;
+            }
+            .navBarContainerMobile {
+                display: flex;
+                /* float: right; */
+                justify-content: flex-end;
+                height: 24px;
+                gap: 1rem;
+                max-width: 100%;
+            }
+        }
+        /* ============================================= BANNNER ================================================================================================= */
+        
+        .banner {
+            position: relative;
+            background: url("/assets/Rectangle\ 2\ \(1\).png") no-repeat center;
+            background-size: cover;
+            height: 440px;
+            width: 100%;
+            overflow: hidden;
+            background-position: center;
+        }
+        
+        .bannerContainer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.60) 100%);
+            z-index: 1;
+        }
+        
+        .bannerHeading {
+            position: absolute;
+            top: 286px;
+            left: 200px;
+            color: #FFFFFF;
+        }
+        
+        .bannerHeading h1 {
+            font-family: "IBM Plex Sans", sans-serif;
+            font-weight: 700;
+            line-height: normal;
+            font-style: normal;
+        }
+        
+        .bannerHeading h3 {
+            font-size: 18px;
+            font-weight: 400;
+            font-family: "IBM Plex Sans", sans-serif;
+            line-height: normal;
+            font-style: normal;
+        }
+        
+        .bannerSvg {
+            display: none;
+        }
+        /* ============== MEDIA QUERIES (MEDIUM) ============ */
+        
+        @media screen and (max-width: 851px) {
+            .bannerSvg {
+                z-index: 2;
+                display: flex;
+                justify-content: space-between;
+                max-width: 90%;
+                margin: auto;
+                align-items: center;
+                position: relative;
+            }
+            .banner svg {
+                margin-top: 14px;
+                color: white;
+            }
+            .bannerHeading {
+                position: absolute;
+                top: 286px;
+                left: 20px;
+                color: #FFFFFF;
+            }
+        }
+        /* * ============== MEDIA QUERIES (SMALL) ============ */
+        
+        @media screen and (max-width: 600px) {
+            .bannerHeading h1 {
+                font-size: 26px;
+                font-weight: 700;
+            }
+            .bannerHeading h3 {
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
+        /* =============================================== ITEM SWICHER =============================================== */
+        
+        .itemSwitcher {
+            max-width: 76%;
+            margin: auto;
+            /* padding-bottom: 15px;
+    border-bottom: 2px solid #8A8A8A; */
+        }
+        
+        .itemSwitherContainer {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 3rem;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #8A8A8A;
+        }
+        
+        .itemSwitherContainer::after {
+            content: '';
+            display: block;
+            position: absolute;
+            background: #000;
+            width: 80px;
+            height: 3px;
+            bottom: -2px;
+        }
+        
+        .itemSwitcherLeft {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .itemSwitcherLeft ul {
+            display: flex;
+            gap: 2rem;
+            padding: 0;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+        
+        .itemSwitcherLeft ul li {
+            list-style: none;
+            font-size: 16px;
+            font-weight: 400;
+            font-family: "IBM Plex Sans", sans-serif;
+            color: #8A8A8A;
+        }
+        
+        .itemSwitcherLeft ul li:nth-child(1) {
+            color: #000;
+        }
+        
+        .itemSwitcherRight {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .itemWritePost {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .itemWritePost button {
+            background-color: #EDEEF0;
+            border: none;
+            width: 133px;
+            height: 36px;
+            color: #000;
+            font-family: IBM Plex Sans;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            border-radius: 4px;
+        }
+        
+        .itemWritePost button svg {
+            width: 22px;
+            height: 22px;
+        }
+        
+        .itemJoinGroup button {
+            width: 125px;
+            height: 36px;
+            border-radius: 4px;
+            background: #2F6CE5;
+            border: none;
+            color: #FFF;
+            font-family: IBM Plex Sans;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+        
+        .itemJoinGroup button svg {
+            width: 22px;
+            height: 22px;
+            flex-shrink: 0;
+            margin-right: 5px;
+        }
+        
+        .itemSwitherContainerMobile {
+            display: none;
+        }
+        /* ============== MEDIA QUERIES (MEDIUM) ============ */
+        
+        @media screen and (max-width: 900px) {
+            .itemSwitcherLeft ul {
+                gap: 1rem;
+            }
+        }
+        /* * ============== MEDIA QUERIES (SMALL) ============ */
+        
+        @media screen and (max-width: 851px) {
+            .itemSwitherContainer {
+                display: none;
+            }
+            .itemSwitcher {
+                max-width: 90%;
+            }
+            .itemSwitherContainerMobile {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 8vh;
+            }
+            .itemSwitherPost svg {
+                width: 70.486px;
+                height: 12.572px;
+                flex-shrink: 0;
+            }
+            .itemSwithFilter button {
+                background-color: #EDEEF0;
+                border: none;
+                width: 133px;
+                height: 36px;
+                color: #000;
+                font-family: IBM Plex Sans;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                border-radius: 4px;
+            }
+        }
+        /* ================================== CART ====================================== */
+        
+        .bodyGrid {
+            max-width: 76%;
+            margin: auto;
+        }
+        
+        .bodyGridContainer {
+            margin-top: 1rem;
+            display: flex;
+            gap: 10rem;
+        }
+        
+        .bodyCard {
+            margin-top: 1rem;
+            width: 692px;
+            /* height: 472px; */
+            margin-bottom: 1rem;
+            border-radius: 4px;
+            border: 1px solid #E0E0E0;
+            background: #FFF;
+        }
+        
+        .cardWritten {
+            margin: 10px 20px 10px 20px;
+        }
+        
+        .bodyCardArticle p {
+            color: #000;
+            font-family: 'IBM Plex Sans';
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+        
+        .bodyCardHeading {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .bodyCardHeading h1 {
+            color: #000;
+            font-family: IBM Plex Sans;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 134.167%;
+            width: 85%;
+        }
+        
+        .bodyCardHeadingPara {
+            color: #5C5C5C;
+            font-family: IBM Plex Sans;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 134.167%;
+            /* 25.492px */
+        }
+        
+        .share {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 2rem;
+        }
+        
+        .shareLeft {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+        
+        .left {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+        }
+        
+        .shareLeft img {
+            width: 48px;
+            height: 48px;
+        }
+        
+        .shareLeft h3 {
+            color: #000;
+            font-family: IBM Plex Sans;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin: 0%;
+        }
+        
+        .shareView {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-left: 15rem;
+        }
+        
+        .shareView p {
+            margin: 0;
+            color: #525252;
+            text-align: right;
+            font-family: IBM Plex Sans;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+        
+        .shareShare {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 36px;
+            flex-shrink: 0;
+            border-radius: 2px;
+            background: #EDEEF0;
+        }
+        
+        .locationCart {
+            margin-top: 3rem;
+        }
+        
+        .locationInput input {
+            border: none;
+            /* color: black; */
+            width: 78%;
+        }
+        
+        .locationInput input::placeholder {
+            color: #000;
+            font-family: IBM Plex Sans;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            border: none;
+            line-height: normal;
+        }
+        
+        .locationInput {
+            border-bottom: 2px solid #B8B8B8;
+            padding-bottom: .5rem;
+        }
+        
+        .locationDescription {
+            display: flex;
+            margin-top: 2rem;
+            gap: 0.5rem;
+        }
+        
+        .locationDescription svg {
+            width: 16px;
+            height: 16px;
+            flex-shrink: 0;
+        }
+        
+        .locationDescription p {
+            color: #000;
+            font-family: IBM Plex Sans;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        
+        .recommendedGroup {
+            margin-top: 2rem;
+            /* display: none; */
+        }
+        
+        .thumb {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .thumb img {
+            width: 18px;
+            height: 18px;
+            flex-shrink: 0;
+        }
+        
+        .thumb p {
+            color: #000;
+            font-family: IBM Plex Sans;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 1.4px;
+            text-transform: uppercase;
+        }
+        
+        .rePeople {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+        }
+        
+        .pplLeft {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+        
+        .pplLeft img {
+            width: 36px;
+            height: 36px;
+            flex-shrink: 0;
+        }
+        
+        .pplLeft p {
+            color: #000;
+            font-family: IBM Plex Sans;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 0;
+        }
+        
+        .pplbtn button {
+            color: #000;
+            text-align: center;
+            font-family: IBM Plex Sans;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            width: 60px;
+            height: 24px;
+            flex-shrink: 0;
+            border-radius: 14px;
+            background: #EDEEF0;
+            border: none;
+        }
+        
+        .bodyHeadingDataTime {
+            display: flex;
+            gap: 3rem;
+        }
+        
+        .Date {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+        }
+        
+        .Date svg {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+        }
+        
+        .Date h3 {
+            color: #000;
+            font-family: IBM Plex Sans;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin: 0;
+        }
+        
+        .location {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: .5rem;
+        }
+        
+        .location h3 {
+            color: #000;
+            font-family: IBM Plex Sans;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin: 0%;
+        }
+        
+        .bodyButton {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-top: 1rem;
+        }
+        
+        .bodyButton button {
+            width: 100%;
+            /* width: 652px; */
+            height: 38px;
+            flex-shrink: 0;
+            border-radius: 8px;
+            border: 0.7px solid #A9AEB8;
+            background: #FFF;
+            color: #E56135;
+            text-align: center;
+            font-family: IBM Plex Sans;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 140.4%;
+        }
+        
+        .shareShare p {
+            display: none;
+        }
+        /* ============== MEDIA QUERIES (MEDIUM) ============ */
+        
+        @media screen and (max-width: 1260px) {
+            .bodyGridContainer {
+                gap: 2rem;
+            }
+            .bodyCard {
+                width: 500px;
+            }
+            .bodycardImg img {
+                width: 499px;
+            }
+            .shareView {
+                margin-left: 0;
+            }
+            .locationInput input {
+                width: 68px;
+            }
+        }
+        /* * ============== MEDIA QUERIES (SMALL) ============ */
+        
+        @media screen and (max-width: 851px) {
+            .locationCart {
+                display: none;
+            }
+            .bodyGrid {
+                max-width: 100%;
+            }
+            .bodyCard {
+                width: 100%;
+            }
+            .bodycardImg img {
+                width: 100%;
+            }
+            .bodyCardHeading h1 {
+                font-size: 16px;
+            }
+            .bodyHeadingPara p {
+                font-size: 9px;
+            }
+            .shareLeft {
+                display: flex;
+                flex-direction: column;
+                gap: 0;
+            }
+            .shareView svg {
+                display: none;
+            }
+            .shareShare p {
+                display: block;
+                margin-bottom: 0;
+            }
+            .shareShare {
+                width: 98px;
+                gap: .5rem;
+            }
+            .shareLeft img {
+                width: 37px;
+                height: 37px;
+            }
+            .shareLeft h3 {
+                font-size: 14px;
+            }
+            .left {
+                display: flex;
+            }
+            .shareView p {
+                margin-left: 2rem;
+            }
+            .bodyHeadingDataTime {
+                gap: 1rem;
+            }
+            .Date {
+                gap: .3rem;
+            }
+            .Date h3 {
+                font-size: 13px;
+            }
+            .location h3 {
+                font-size: 13px;
+            }
+        }
+        /* ======================== FORM ================================================         */
+        
+        .body {
+            position: relative;
+            height: auto;
+            width: 100%;
+        }
+        
+        .body::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 101;
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        .body.show::before {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        
+        .form_container {
+            position: fixed;
+            max-width: 677px;
+            width: 100%;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(1.2);
+            z-index: 101;
+            background-color: white;
+            /* padding: 25px; */
+            border-radius: 12px;
+            box-shadow: rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            pointer-events: none;
+            transition: 0.4s ease-out;
+        }
+        
+        .formUpperHeading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(239, 255, 244, 1);
+            /* width: 736px; */
+            height: 50px;
+            flex-shrink: 0;
+            border-radius: 12px;
+        }
+        
+        .form h2 {
+            color: #008A45;
+            text-align: center;
+            font-family: IBM Plex Sans;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 16px;
+            /* 114.286% */
+            margin: 0;
+        }
+        
+        .fromContainermain {
+            display: flex;
+            margin-top: 1rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        
+        .formLeft h3 {
+            color: #000;
+            font-family: IBM Plex Sans;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        
+        .formLeft .emailFom {
+            display: flex;
+            width: 320px;
+            height: 46px;
+            flex-shrink: 0;
+            border-radius: 2px 2px 0px 0px;
+            border: 1px solid #D9D9DB;
+            background: #F7F8FA;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        .emailFom input {
+            border: none;
+            background: #F7F8FA;
+        }
+        
+        .nameFom {
+            display: flex;
+            width: 320px;
+            height: 46px;
+            flex-shrink: 0;
+            border-radius: 2px 2px 0px 0px;
+            border: 1px solid #D9D9DB;
+            background: #F7F8FA;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        .nameFom input {
+            border: none;
+            width: 153px;
+            background: #F7F8FA;
+        }
+        
+        .formLeft button {
+            width: 320px;
+            height: 40px;
+            flex-shrink: 0;
+            border-radius: 20px;
+            background: #2F6CE5;
+            color: white;
+            border: none;
+            margin-top: 1rem;
+        }
+        
+        .signInoptin {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .signInoptin button {
+            width: 320px;
+            height: 38px;
+            flex-shrink: 0;
+            border-radius: 2px;
+            border: 0.6px solid #D9D9DB;
+            background: #FFF;
+            margin-top: 0%;
+            color: black;
+        }
+        
+        .signInoptin button img {
+            width: 16px;
+            height: 16px;
+            flex-shrink: 0;
+            margin-right: 1rem;
+        }
+        
+        .ForgotPassword {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+        
+        .ForgotPassword h3 {
+            color: #000;
+            text-align: center;
+            font-family: IBM Plex Sans;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 16px;
+            /* 133.333% */
+            letter-spacing: -0.096px;
+        }
+        
+        .formRight h1 {
+            color: #3D3D3D;
+            text-align: right;
+            font-family: IBM Plex Sans;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        
+        .formRight a {
+            color: #2F6CE5;
+            font-family: IBM Plex Sans;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-decoration: none;
+        }
+        
+        .formRight img {
+            width: 320px;
+            height: 320px;
+            flex-shrink: 0;
+        }
+        
+        .rightTxt p {
+            color: #000;
+            text-align: right;
+            font-family: IBM Plex Sans;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 16px;
+            /* 145.455% */
+            letter-spacing: -0.088px;
+        }
+        
+        .show .form_container {
+            opacity: 5;
+            pointer-events: auto;
+            transform: translate(-50%, -50%) scale(1.2);
+        }
+        
+        .login_form {
+            display: none;
+        }
+        
+        .active .login_form {
+            display: block;
+        }
+        
+        .active .signup_form {
+            display: none;
+        }
+        
+        .form_close {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: -33px;
+            right: -3px;
+            color: #000;
+            background-color: white;
+            cursor: pointer;
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            flex-shrink: 0;
+        }
+        
+        .form_closeSignup {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: -33px;
+            right: -3px;
+            color: #000;
+            background-color: white;
+            cursor: pointer;
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+        }
+        
+        .mobPara {
+            display: none;
+        }
+        
+        .sigininBtnPara {
+            display: none;
+        }
+        /* ============== MEDIA QUERIES (MEDIUM) ============ */
+        
+        @media screen and (max-width: 837px) {
+            .form_container {
+                max-width: 500px;
+            }
+            .form h2 {
+                font-size: 10px;
+            }
+            .formLeft h3 {
+                font-size: 18px;
+            }
+            .formLeft .emailFom {
+                width: 220px;
+                height: 40px;
+            }
+            .nameFom {
+                width: 220px;
+                height: 40px;
+            }
+            .nameFom input {
+                width: 100px;
+            }
+            .formLeft button {
+                width: 220px;
+                height: 35px;
+            }
+            .signInoptin {
+                margin-top: 1rem;
+            }
+            .signInoptin button {
+                width: 220px;
+                height: 35px;
+                margin-bottom: 1rem;
+            }
+            .ForgotPassword h3 {
+                font-size: 10px;
+            }
+            .formRight h1 {
+                font-size: 10px;
+                text-align: center;
+            }
+            .formRight a {
+                font-size: 10px;
+            }
+            .formRight img {
+                width: 220px;
+                height: 220px;
+            }
+            .rightTxt p {
+                font-size: 10px;
+                text-align: center;
+            }
+        }
+        /* ============== MEDIA QUERIES (SMALL) ============ */
+        
+        @media screen and (max-width: 619px) {
+            .formUpperHeading {
+                display: none;
+            }
+            .formRight {
+                display: none;
+            }
+            .form_container {
+                top: 60%;
+                max-width: 90%;
+            }
+            .fromContainermain {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .formLeft {
+                display: flex;
+                flex-direction: column;
+                /* align-items: center; */
+                /* justify-content: center; */
+            }
+            .formLeft h3 {
+                display: flex;
+                text-align: left;
+                margin-left: 1rem;
+            }
+            .formLeft form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .formLeft .emailFom {
+                width: 90%;
+                height: 40px;
+            }
+            .nameFom {
+                width: 90%;
+                height: 40px;
+            }
+            .emailFom input {
+                width: 90%;
+            }
+            .nameFom input {
+                width: 90px;
+            }
+            .sigininBtn {
+                display: flex;
+                justify-content: space-between;
+                width: 90%;
+                align-items: center;
+            }
+            .sigininBtn button {
+                width: 56%;
+            }
+            .sigininBtnPara {
+                display: block;
+            }
+            .sigininBtnPara {
+                margin: 0;
+                color: #495057;
+                text-align: center;
+                font-family: IBM Plex Sans;
+                font-size: 8px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                text-decoration-line: underline;
+            }
+            .signInoptin {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .signInoptin button {
+                width: 90%;
+                font-size: 10px;
+            }
+            .form_close {
+                top: 10px;
+                background-color: #000;
+                color: white;
+                right: 15px;
+            }
+            .form_closeSignup {
+                top: 10px;
+                background-color: #000;
+                color: white;
+                right: 15px;
+            }
+            .mobPara {
+                display: block;
+            }
+            .mobPara p {
+                color: #212529;
+                text-align: center;
+                font-family: IBM Plex Sans;
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 16px;
+                /* 145.455% */
+                letter-spacing: -0.088px;
+            }
+            .ForgotPassword {
+                margin-bottom: 5rem;
+            }
+        }
